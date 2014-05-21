@@ -355,7 +355,7 @@ color: #C0C0C0;
 
 
 .date-icon {
-background: url(http://static.tumblr.com/lrdmbyy/LNPmtp8u3/date.png) no-repeat;
+background: url(../img/date.png) no-repeat;
 height: 36px;
 width: 36px;
 margin-left: 12px;
@@ -364,7 +364,7 @@ display: block;
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .date-icon {
-    background-image: url(http://static.tumblr.com/54tapni/n1smugvn5/date_2x.png);
+    background-image: url(../img/date_2x.png);
     background-size: 36px;
   }
 }
@@ -381,7 +381,7 @@ font-size: 16px;
 }
 
 .comments-icon {
-background: url(http://static.tumblr.com/lrdmbyy/yEpmtp8uh/comments.png) no-repeat;
+background: url(../img/comments.png) no-repeat;
 height: 36px;
 width: 36px;
 margin-left: 12px;
@@ -390,7 +390,7 @@ display: block;
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .comments-icon {
-    background-image: url(http://static.tumblr.com/54tapni/IMgmugv50/comments_2x.png);
+    background-image: url(../img/comments_2x.png);
     background-size: 36px;
   }
 }
@@ -401,7 +401,7 @@ margin-bottom: 12px;
 }
 
 .likes-icon {
-background: url(http://static.tumblr.com/lrdmbyy/uGYmtp8ur/favorites.png) no-repeat;
+background: url(../img/favorites.png) no-repeat;
 height: 36px;
 width: 36px;
 margin-left: 12px;
@@ -411,7 +411,7 @@ display: block;
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .likes-icon {
-    background-image: url(http://static.tumblr.com/54tapni/ixYmugvni/favorites_2x.png);
+    background-image: url(../img/favorites_2x.png);
     background-size: 36px;
   }
 }
