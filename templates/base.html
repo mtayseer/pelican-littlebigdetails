@@ -15,12 +15,11 @@
   <meta name="twitter:creator" content="@m_tayseer">
   <meta property="og:title" content="{{ SITENAME }}"/>
   <meta property="og:type" content="blog"/>
-
-  <!--Normalize 2.1.0 CSS-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css?v={{ VERSION }}">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments_style.min.css?v={{ VERSION }}">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css?v={{ VERSION }}">
 
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -39,8 +38,6 @@
   <div class="container" class="clearfix">
 
     <div class="sec-col">
-      <h2 class="description">{{ DESCRIPTION }}</h2>
-
       <div id="browse">
         <ul class="sidebar-pages">
           {% for tag, articles in tags|sort %}

@@ -1,63 +1,73 @@
-body,
-html {
-  font-family: 'Open Sans', sans-serif;
+//@link-color: #ee0000;
+//@link-color: #52c097;
+@link-color: #ed6060;
+@text-color: #010101;
+@light-text-color: #c0c0c0;
+
+body,html {
+  font-family: 'Open Sans', sans-serif; 
   font-weight: 200;
 }
+
 .container {
   width: 960px;
   margin: 0 auto;
   padding: 0 30px 0 30px;
 }
+
 .main-col,
 .sec-col {
   float: left;
   margin-top: 30px;
 }
+
 .main-col {
   width: 620px;
   margin-left: 20px;
 }
+
 .sec-col {
   width: 300px;
   margin-right: 20px;
 }
+
+
 #logo {
   height: 48px;
   float: left;
   width: 440px;
-}
+} 
+
 #logo a {
-  color: #010101;
+  color: @text-color;
   font-size: 28px;
   margin-bottom: 0;
-}
+} 
+
 #logo a:hover {
-  color: #ed6060;
+  color: @link-color;
 }
-h1,
-h2,
-h3,
-h4 {
+
+h1, h2, h3, h4 {
   line-height: 1.5em;
   margin-top: 0;
 }
-h1 a,
-.text h2 a,
-.text h3 a,
-.text h4 a {
+
+h1 a, .text h2 a, .text h3 a, .text h4 a {
   text-decoration: none;
 }
-.text h2 a:hover,
-.text h3 a:hover,
-.text h4 a:hover {
+
+.text h2 a:hover, .text h3 a:hover, .text h4 a:hover {
   text-decoration: underline;
 }
+
 h3 {
-  color: #010101;
+  color: @text-color;
   font-size: 24px;
   margin-top: 6px;
   margin-bottom: 18px;
 }
+
 h4 {
   font-size: 20px;
   line-height: 20px;
@@ -65,6 +75,7 @@ h4 {
   margin-bottom: 10px;
   font-weight: 200;
 }
+
 blockquote {
   margin-top: 0px;
   margin-left: 0px;
@@ -72,57 +83,67 @@ blockquote {
   font-weight: 200;
   width: 500px;
 }
+
+
 #nav {
   font-size: 18px;
   float: right;
   margin-top: 16px;
   list-style: none;
 }
+
 #nav li {
   float: left;
   margin-left: 30px;
 }
+
 .links {
-  color: #010101;
+  color: @text-color;
   text-decoration: none;
 }
+
 .links:hover {
-  color: #ed6060;
+  color: @link-color;
 }
+
 .sidebar-pages {
-  text-decoration: none;
-  color: #c0c0c0;
-  float: left;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0px;
-  padding: 0px;
-  -webkit-font-smoothing: antialiased;
-  list-style: none;
-  width: 240px;
+text-decoration: none;
+color: @light-text-color;
+float: left;
+font-size: 14px;
+line-height: 20px;
+margin: 0px;
+padding: 0px;
+-webkit-font-smoothing: antialiased;
+list-style: none;
+width: 240px;
+
 }
+
 .sidebar-pages a {
-  text-decoration: none;
-  color: #c0c0c0;
+text-decoration: none;
+color: @light-text-color;
 }
+
 article {
   clear: both;
 }
+
 article:before,
 article:after {
-  content: "";
-  display: table;
-}
+    content: "";
+    display: table;
+} 
 article:after {
-  clear: both;
+    clear: both;
 }
 article {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
+
 .submit {
-  padding: 14px 14px 14px 14px;
-  background: #ed6060;
+  padding: 14px 14px 14px 14px;      
+  background: @link-color;
   color: white;
   text-decoration: none;
   -webkit-border-radius: 4px;
@@ -133,100 +154,123 @@ article {
   font-weight: 200;
   outline: none;
 }
+
 input.submit {
   padding: 11px 14px 11px 14px;
 }
+
 .submit:hover {
   background: #ff0000;
 }
+
 .description {
   font-size: 36px;
   font-weight: 200;
   margin-top: 30px;
   width: 240px;
 }
+
 .post {
   margin-bottom: 90px;
 }
+
+
+
 #disqus_thread {
-  margin-bottom: 90px;
-  width: 540px;
-  float: left;
+margin-bottom: 90px;
+width: 540px;
+float: left;
 }
+
 #disqus_thread a {
-  color: #ed6060;
+ color: @link-color;
+
 }
+
 #disqus_thread a {
-  color: #ed6060;
+ color: @link-color;
+
 }
+
 .result {
-  margin-top: 30px;
+ margin-top: 30px;
 }
+
+
+
+
 .text {
   width: 540px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 200;
-  color: #010101;
+  color: @text-color;
 }
+
 .text a {
-  color: #ed6060;
+  color: @link-color;
 }
+
 .text a:hover {
   text-decoration: none;
 }
-.quote,
-.link,
-.video,
-.audio,
-.photoset,
-.answer,
-.chat,
-.panorama,
-.photo {
+
+.quote, .link, .video, .audio, .photoset, .answer, .chat, .panorama, .photo {
   width: 540px;
-}
+}      
+
 .detail {
   border: 30px solid #f8f8f8;
   max-width: 480px;
 }
+
 .caption {
   float: left;
   margin-top: 15px;
   width: 540px;
 }
+
 .caption p {
   font-size: 18px;
   color: #101010;
 }
+
 .caption a {
-  color: #ed6060;
+  color: @link-color;
 }
+
 .caption a:hover {
   color: #ff0000;
-}
+  }
+
 .tags {
-  text-decoration: none;
-  color: #c0c0c0;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  float: left;
-  width: 480px;
-  margin-top: 15px;
+text-decoration: none;
+color: @light-text-color;
+font-size: 14px;
+-webkit-font-smoothing: antialiased;
+float: left;
+width: 480px;
+margin-top: 15px;
 }
+
 .tags a {
-  text-decoration: none;
-  color: #c0c0c0;
+text-decoration: none;
+color: @light-text-color;
 }
+
+
 .meta {
   float: right;
   width: 60px;
   text-align: center;
 }
+
 .meta a {
-  color: #010101;
+  color: @text-color;
   text-decoration: none;
 }
+
+
 .date-icon {
   background: url(../img/date.png) no-repeat;
   height: 36px;
@@ -238,16 +282,22 @@ input.submit {
   font-size: 16px;
   margin-top: 0;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .date-icon {
     background-image: url(../img/date_2x.png);
     background-size: 36px;
   }
 }
+
 .date {
   margin-top: 6px;
   margin-bottom: 12px;
 }
+
+.cal-date {
+}
+
 .comments-icon {
   background: url(../img/comments.png) no-repeat;
   height: 36px;
@@ -255,106 +305,104 @@ input.submit {
   margin-left: 12px;
   display: block;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .comments-icon {
     background-image: url(../img/comments_2x.png);
     background-size: 36px;
   }
 }
+
 .comments {
-  margin-top: 6px;
-  margin-bottom: 12px;
+margin-top: 6px;
+margin-bottom: 12px;
 }
+
 .likes-icon {
-  background: url(../img/favorites.png) no-repeat;
-  height: 36px;
-  width: 36px;
-  margin-left: 12px;
-  display: block;
+background: url(../img/favorites.png) no-repeat;
+height: 36px;
+width: 36px;
+margin-left: 12px;
+display: block;
+
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .likes-icon {
     background-image: url(../img/favorites_2x.png);
     background-size: 36px;
   }
 }
+
+
+
 .likes {
-  margin-top: 6px;
+margin-top: 6px;
 }
+
 .pagination {
-  margin-top: 30px;
-  margin-bottom: 60px;
-  font-size: 24px;
-  text-decoration: none;
-  color: #c0c0c0;
-  width: 540px;
-  text-align: center;
+margin-top: 30px;
+margin-bottom: 60px;
+font-size: 24px;
+text-decoration: none;     
+color: @light-text-color;
+width: 540px;
+text-align: center;
 }
+
 .pagination a {
-  color: #ed6060;
+color: @link-color;
 }
+
 .pagination a:hover {
-  color: #ff0000;
+color: #ff0000;
 }
+
 .prev {
-  float: left;
+float: left;
 }
+
 .next {
-  float: right;
-}
+float: right;
+} 
+
 #footer {
-  min-height: 90px;
-  float: left;
-  width: 100%;
-  margin-top: 60px;
-  background-color: #f8f8f8;
+min-height: 90px;
+float: left;
+width: 100%;
+margin-top: 60px;
+background-color: #f8f8f8;
 }
+
 input[type=text],
 input[type=email] {
   -webkit-transition: border 200ms;
   -moz-transition: border 200ms;
   transition: border 200ms;
 }
+
 input[type=text]:focus,
 input[type=email]:focus {
-  color: #010101;
+  color: @text-color;
   border-color: #010101;
   outline: none;
 }
-img,
-video,
-object,
-embed {
+
+img, video, object, embed {
   max-width: 100%;
   height: auto !important;
 }
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
+
+.clearfix {zoom:1;}
+.clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
-  overflow: hidden;
-}
-.clearfix:after {
-  clear: both;
-}
-.rtl {
-  direction: rtl;
-}
-pre,
-code,
-tt {
-  font-family: 'Source Code Pro';
-  font-size: 14px;
-  background: #f0f0f0;
-  line-height: 1.6em;
-}
-pre {
-  overflow-x: scroll;
-}
-.text .highlight .err {
-  border: none;
-}
+  overflow: hidden; }
+.clearfix:after {clear: both;}
+
+.rtl { direction: rtl; }
+
+pre, code, tt { font-family: 'Source Code Pro'; font-size: 14px; background: #f0f0f0; line-height: 1.6em; }
+pre { overflow-x: scroll; }
+.text .highlight .err { border: none; }
